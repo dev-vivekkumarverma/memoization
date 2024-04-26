@@ -23,6 +23,7 @@ The provided Jupyter Notebook (`recursion.ipynb`) contains two implementations o
 ```python
 import time
 
+@timeProfiler
 def find_feb(n):
     def feb(n):
         if n == 1:
@@ -42,6 +43,7 @@ print(f"Result: {result}, Execution Time: {execution_time} seconds")
 ```python
 import time
 
+@timeProfiler
 def find_feb_with_memo(n):
     memo = {}
     
